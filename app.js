@@ -43,7 +43,7 @@ $(function(){
 
 						//Display the poster and a message announcing the result
 
-						$('#poster').html('<h2 class="loading">Well, gee whiz! We found you a poster, skip!</h2><img id="thePoster" src=' + baseimg + json.results[0].poster_path + ' />');
+						$('#poster').html('<h2 style={color:gray}class="loading">Well, gee whiz! We found you a poster, skip!</h2><img id="thePoster" src=' + baseimg + json.results[0].poster_path + ' />');
 					} else {
 						$.getJSON("http://api.themoviedb.org/3/search/movie?query=goonies&api_key=" + api_key, 
 							function(json){
